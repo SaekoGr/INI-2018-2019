@@ -1,0 +1,154 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{verbatim}
+\usepackage[left=1.5cm, text={18cm, 25cm}, top = 2.5cm]{geometry}
+\usepackage{amsmath}
+\setlength\parindent{0pt}
+
+\begin{document}
+\begin{center}
+%%% Title page %%%
+\Huge
+\textsc{Fakulta informačních technologií\\
+Vysoké učení technické v Brně}
+\\[84mm]
+\LARGE Návrh a implementácia IT služieb \--\ 2. časť\\
+\Huge Finančná analýza\\
+\vspace{3.5cm}
+\LARGE IT\_TCrowd\\
+\Large 22. okóbra 2018
+\vspace{\stretch{9.5}}
+\end{center}
+
+\hfill
+
+%%% Names %%%
+\begin{minipage}[l]{0.6 \textwidth}
+\Large
+\begin{tabular}{l l l}
+Adam Hostin  & xhosti02\\
+Sabína Gregušová & xgregu02\\
+Tomáš Sasák & xsasak01 \\
+Adrián Tulušák  & xtulus00 \\
+Jakub Zmek & xzmekj00 \\
+\end{tabular}
+\end{minipage}
+\thispagestyle{empty}
+\clearpage
+
+\setcounter{page}{1}
+\noindent\rule{\textwidth}{1pt}
+\begin{center}
+Sme firma s dlhoročnou tradíciou zaoberajúca sa automatizáciou a softvérom naväzujúci na špecifický hardvér. Poskytujeme služby najmä rôznym industriálnym firmám a letiskám.  \\
+\end{center}
+\noindent\rule{\textwidth}{1pt}
+
+\section*{Názov služby: Správa hardwaru}
+Táto služba zahŕňa dodanie požadovaného hardwaru, jeho správne nadstavenie a prípadnú údržu. Hardware je rozdelený podľa logických celkov na:
+ \begin{itemize}
+\item \textbf{check-in stô}l
+\begin{itemize}
+\item desktop + príslušenstvo 20 000.00 KČ
+\item technik pre zapojenie 5 000.00 KČ
+\item čítač kódov leteniek 2500.00 KČ
+\item váha pre batožinu 7 000.00 KČ
+\end{itemize}
+
+
+\item  \textbf{kontrolné stanovisko}
+\begin{itemize}
+\item desktop + príslušenstvo 20 000.00 KČ
+\item technici pre zapojenie 10 000.00 KČ
+\item skener batožiny 25 000.00 KČ
+\item detektor kovov 112 064.00 KČ
+\end{itemize}
+
+\item  \textbf{gate}
+\begin{itemize}
+\item desktop + príslušenstvo 20 000.00 KČ
+\item technik pre zapojenie 5 000.00 KČ
+\item čítač kódov leteniek 2 500.00 KČ
+\end{itemize}
+
+\item  \textbf{internetové pripojenie}
+\begin{itemize}
+\item router + kabeláž 6 000.00 KČ
+\item práca technika za hodinu 1 000.00 KČ
+\end{itemize}
+
+\end{itemize}
+
+\subsection*{Vývoj ceny}
+Vývoj cena podľa inflácie, vývoja hardwaru a ďaľších požiadaviek klientov
+
+\section*{Názov služby: Hosting a správa databáz a IS}
+\begin{itemize}
+\item Cena licencie balíčka MICRO 40 000.00 KČ:
+\begin{itemize}
+\item prenájom priestorov 15 000.00 Kč
+\item nastavenie a implementácia 10 000.00 Kč
+\item funknčnosť servisu 10 000.00 Kč
+\item zisk 5 000.00 Kč
+\end{itemize}
+
+\item  Ostatné prostriedky a ceny z balíčka MEGA 70 000 Kč:
+\begin{itemize}
+\item nastavenie a implementácia 20 000.00 Kč 
+\item  technika na zaručenie redundancie 12 000.00 Kč
+\item  zisk 13 000.00 Kč
+\end{itemize}
+
+
+\item  Ostatné prostriedky a ceny z balíčka TERA 140 000 Kč:
+\begin{itemize}
+\item prenájom priestorov 25 000.00 KČ
+\item nastavenie a implementácia 35 000.00 KČ
+\item zaručenie redundancie 20 000.00 KČ
+\item design a analýza ovládacieho panela 15 000 KČ
+\item zaúčací kurz a lektor 10 000 KČ
+\item zisk 25 000.00 KČ
+\end{itemize}
+
+
+\end{itemize}
+
+- V každej čiastke patriacej zisku je započítaná aj rezerva, pre prípadné poruchy, alebo špeciálne nároky uživatela
+- Rozpoloženie na prostriedky sa v budúcnosti môže meniť na základe trendov a prípadnej zmeny outsorcovaných služieb
+- V prípade menšieho/vačieho záujmu o tieto služby, je možné tieto ceny zmenšovať/zvačšovať
+- Pre balíček TERA, v budúcnosti možno používať univerzálne navrhnutý ovládací panel a tým zvačšiť zisk alebo znížiť cenu podla záujmu (záleží na zákazníkovi)
+
+
+\section*{Názov služby: Prenájom informačného systému}
+\subsection*{Cena inštalácie:} od 49 999.00 KČ
+\begin{itemize}
+\item inštalácia služby, od 14 999.00 KČ
+\item práca programátora od 9 999.00 KČ (v závislosti na čase inštalácie)
+\item grafický návrh 9 999.00 KČ (variabilné závislosti na počte zákazníkov - pre viac sa cena zmenší)
+\item marža 14 999.00 KČ
+\end{itemize}
+\subsection*{Cena chodu:}
+\begin{itemize}
+\item telefonická podpora 1 999.00 KČ/mesiac
+\item technická údržba 499.00 KČ/mesiac
+\item zabezpečenie 999.00 KČ/mesiac
+\item marža 999.99 KČ/mesiac
+\item zavádzanie zmien 499.00 KČ/hodina práce
+\end{itemize}
+
+\subsection*{Trendy v nákladoch}
+Predpokladáme ročné navýšenie o 2 \% (inflácia), viac v SLA
+
+\subsection*{Dynamika variabilných nákladoch}
+\begin{itemize}
+\item Cena sa znižuje podľa počtu zákazníkov danej služby
+\item Zvýšenie v prípade cien energii či zvýšení cenu prenájmu preistorov serverovne
+\item Zníženie ceny v prípade menej častej podpory z našej strany
+\end{itemize}
+
+
+
+\end{document}
