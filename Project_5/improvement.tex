@@ -1,0 +1,94 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{verbatim}
+\usepackage[left=1.5cm, text={18cm, 25cm}, top = 2.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\setlength\parindent{0pt}
+
+
+\begin{document}
+\begin{center}
+%%% Title page %%%
+\Huge
+\textsc{Fakulta informačních technologií\\
+Vysoké učení technické v Brně}
+\\[84mm]
+\LARGE Návrh a implementácia IT služieb\--\ 5. časť\\
+\Huge Service Design Package \\\
+\vspace{3.5cm}
+\LARGE IT\_TCrowd\\
+\Large 3. decembra 2018
+\vspace{\stretch{9.5}}
+\end{center}
+
+\hfill
+
+%%% Names %%%
+\begin{minipage}[l]{0.6 \textwidth}
+\Large
+\begin{tabular}{l l l}
+Adam Hostin  & xhosti02\\
+Sabína Gregušová & xgregu02\\
+Tomáš Sasák & xsasak01 \\
+Adrián Tulušák  & xtulus00 \\
+Jakub Zmek & xzmekj00 \\
+\end{tabular}
+\end{minipage}
+\thispagestyle{empty}
+\clearpage
+
+\setcounter{page}{1}
+
+\section*{Úvod}
+Tento dokument obsahuje Service Review Report, správa o prevádzkovaní služky, týkajúca sa služby Hosting a správy databáz. Služba bola schválená 11. novembra 2011 vo Viedni. Za zodpovednú osobu spojenú s touto službou sa podpisoval Adrián Tulušák.
+
+\section*{Správa o priebehu stretnutia sa zúčastnených strán}
+Zastupujúca osoby zo strany zákazníka:\\
+Meno: Ferdinant 2. von Tiroll\\
+E - mail: Ferdo@mravec.com\\
+Adresa: Wien-Flughafen, 1300 Schwechat, Rakúsko\\
+Telefón: +420 118 999 881\\
+
+Zastupujúca osoba zo strany poskytovatela - IT\_TCrowd:\\
+Meno: Sabína Gregušová\\
+E - mail: sgregu@ittcrowd.com\\
+Adresa: Mánesová 9 3/4, Brno\\
+Telefón: +420 999 119 725\\
+
+Stretnutie prebehlo v dohodnutom čase a vrámci podmienok uvedených v SLA.
+
+\section*{Zhodnotenie kvality dodávaných služieb vrámci SLA}
+Podmienky poskytovania služby Hosting a správa databáz Viedenskému letisku vo Schwechate sa v hromadnej väcšine bodov zhodovali s podmienkami spísanými v SLA. V daľších častiach tohto dokumentu budú uvedené body, ktoré neboli splnené zo strany poskytovateľa, ale aj zo strany zákazníka. Pri každom bode bude uvedené, ako sa líšil obsah SLA a reálne zvládnutá situácia.
+
+\subsection*{Krátkodobý výpadok serveru a následné obmedzenie služieb}
+\begin{itemize}
+\item \textbf{SLA} - Poskytovatel sa zaviazal, že pri neplánovanom výpadku zabezpečí chod služby v plnom rozsahu do 3 hodín od náhlasenia chyby a to tak, že nebudú zasiahnuté business procesy zákazníka ani pohodlie cestujúcich.
+\item \textbf{Reálne zvládnutie situácie} - V rámci SLA bol poriešený bod 4.2. zo strany dodávatela. Po telefonickom nahlásení výpadku dňa 28. novembra 2018 bol zákazníkom okamžite zapojený záložný server. Bohužial, server nebol schopný zvládnuť nápor celého systému, a preto sme museli pristúpiť k obmedzeniu počtu pripojených užívateľov.
+\end{itemize}
+
+\section*{Improvement plan}
+Nasledujúca časť popisuje Improvement Plan k službe Prenájom ifnormačného systému. Zodpovedná osoba je Ing. Ivan Vyskočil, pracovník IT oddelenia IT\_TCrowd, s. r. o.
+
+\section*{Zvýšenie ochrany voči výpadkom}
+Počiatok realizácie je naplánovaný na 7. januára 2019, plánované ukončenie je 29. marca 2019. Plán bol schválený vedúcim spoločnosti IT\_TCrowd, s. r. o., Adránom Tulušákom.
+
+\section*{Návrh na riešenie}
+Automaticky systém napojení na záložný server v prípade výpadku. Zodpovedná osoba je Ing. Petra Fitková. Pri výpadku služby prichádza k veľkým finančným stratám na strane zákazníkom a preto je treba udržovať záložné servery a v prípade výpadku na ne okamžite prepojiť.
+
+\section*{Zvýšenie maximálnych limitov počas služby Prenájom informačného systému}
+Počiatok realizácie je naplánovaný na 7. januára 2019, plánované ukončenie je 29. marca 2019. Plán bol schválený vedúcim spoločnosti IT\_TCrowd, s. r. o., Adránom Tulušákom.
+
+\section*{Návrh riešenia}
+\begin{itemize}
+\item Zvýšenie výkonnosti záložných serverov. Zodpovedná osoba je Ing. Jan Server
+\item Zvýšenie kapacity záložných serverov, aby sme nemuseli obmedzovať na malý počet pripojení. Zodpovedná osoba je Ing. Jan Server.
+\item Sledovanie spokojnosti zákazníkov. Zodpovedná osoba je Ing. Jana Asociální
+\end{itemize}
+
+Pri výpadku bolo velkom ľahké dosiahnuť maximálneho kapacitného stropu, a preto sme nútení vyriešiť problém s nízkou kapacitou. Zvýšenie kapacity vyrieši problém s nedostupnosťou služby a taktiež k strate zisku, z ktorej plynú pokuty pre spoločnosť IT\_TCrowd, s. r. o.
+\end{document}
