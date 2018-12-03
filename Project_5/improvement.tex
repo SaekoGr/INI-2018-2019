@@ -19,7 +19,7 @@
 Vysoké učení technické v Brně}
 \\[84mm]
 \LARGE Návrh a implementácia IT služieb\--\ 5. časť\\
-\Huge Service Design Package \\\
+\Huge Hodnotenie služby a jej zlepšenia \\\
 \vspace{3.5cm}
 \LARGE IT\_TCrowd\\
 \Large 3. decembra 2018
@@ -74,16 +74,16 @@ Podmienky poskytovania služby Hosting a správa databáz Viedenskému letisku v
 \section*{Improvement plan}
 Nasledujúca časť popisuje Improvement Plan k službe Prenájom ifnormačného systému. Zodpovedná osoba je Ing. Ivan Vyskočil, pracovník IT oddelenia IT\_TCrowd, s. r. o.
 
-\section*{Zvýšenie ochrany voči výpadkom}
+\section*{Skrátenie doby nefunkčnosti pri výpadku}
 Počiatok realizácie je naplánovaný na 7. januára 2019, plánované ukončenie je 29. marca 2019. Plán bol schválený vedúcim spoločnosti IT\_TCrowd, s. r. o., Adránom Tulušákom.
 
-\section*{Návrh na riešenie}
-Automaticky systém napojení na záložný server v prípade výpadku. Zodpovedná osoba je Ing. Petra Fitková. Pri výpadku služby prichádza k veľkým finančným stratám na strane zákazníkom a preto je treba udržovať záložné servery a v prípade výpadku na ne okamžite prepojiť.
+\subsection*{Návrh na riešenie}
+Systém automaticky detekuje výpadok serveru a ihneď spustí v takom prípade záložný server. Zodpovědná osoba: Ing. Petra Fitková. Při výpadku služby dochází k velkým finančním ztrátám na straně zákazníků a proto je třeba udržovat záložní servery a v případě výpadku na ně okamžitě přepojit.
 
 \section*{Zvýšenie maximálnych limitov počas služby Prenájom informačného systému}
 Počiatok realizácie je naplánovaný na 7. januára 2019, plánované ukončenie je 29. marca 2019. Plán bol schválený vedúcim spoločnosti IT\_TCrowd, s. r. o., Adránom Tulušákom.
 
-\section*{Návrh riešenia}
+\subsection*{Návrh na riešenie}
 \begin{itemize}
 \item Zvýšenie výkonnosti záložných serverov. Zodpovedná osoba je Ing. Jan Server
 \item Zvýšenie kapacity záložných serverov, aby sme nemuseli obmedzovať na malý počet pripojení. Zodpovedná osoba je Ing. Jan Server.
@@ -91,4 +91,37 @@ Počiatok realizácie je naplánovaný na 7. januára 2019, plánované ukončen
 \end{itemize}
 
 Pri výpadku bolo velkom ľahké dosiahnuť maximálneho kapacitného stropu, a preto sme nútení vyriešiť problém s nízkou kapacitou. Zvýšenie kapacity vyrieši problém s nedostupnosťou služby a taktiež k strate zisku, z ktorej plynú pokuty pre spoločnosť IT\_TCrowd, s. r. o.
+
+\section*{Zvýšenie ochrany proti výpadkom}
+Počiatok realizácie je naplánovaný na 7. januára 2019, plánované ukončenie je 29. marca 2019. Plán bol schválený vedúcim spoločnosti IT\_TCrowd s.r.o. Adriánom Tulušákom.
+
+\subsection*{Návrh na riešenie}
+\begin{itemize}
+\item Zvýšenie zabezpečenia priestorov serverovne novším kamerovým systémom, rozšírenie monitorovanej oblasti. Zodpovedná osoba: Bc. Honza Zámečník.
+\item Zvýšenie zabezpečenia prístupu do databáz prísnejšími bezpečnostnými prvkami v systéme. Bc. Honza Zámečník.
+\end{itemize}
+
+\section*{Monitorovanie správneho fungovania databáz}
+Počiatok realizácie je naplánovaný na 7. januára 2019, plánované ukončenie je 29. marca 2019. Plán bol schválený vedúcim spoločnosti IT\_TCrowd s.r.o. Adriánom Tulušákom.
+
+\subsection*{Návrh na riešenie}
+Automatické získavanie analyzačných údajov od zákazníkov v priebehu využívania služby a následné spracovanie za účelom zvýšenia kvality služby a zníženia pravdepodobnosti možnosti výpadku. Zodpovedná osoba: Ing. Jan Server.
+Pravidelné kontroly a aktualizácie bezpečnostných prvkov a funkčnosti databáz. Zodpovedná osoba: Ing. Jan Server.
+
+\section*{Request for change}
+Názov zmeny: Zbysenie ochrany voči výpadkom\\
+Vlastník a inicializátor: Ing. Peter Puchs\\
+Deadline: 6. septembra 2019
+
+\section*{Detailný popis zmeny}
+Zistiť, akým najefektívnejším spôsobom použiť redundantnú zálohu databáze zákazníka, a túto redundantnú databázu nahradiť vypadnutou databázou. Neskôr skúsiť nasimulovať a otestovať takúto situáciu a jej riešenie a zhodnotiť jej klady a zápory a celkovú efektivitu. Po schválení vytvoriť dodatok ku zmluve a predstaviť ho zákazníkovi s očakávaním súhlasu a neskorším zavedením tejto zmeny.
+
+\section*{Riziká}
+Najväčšie riziko vzniká pri práci s redundantnými databázami, kde vzniká riziko jej čiastočnej alebo úplnej straty. A taktiež rovnaké riziko vzniká pri práci s hlavnou databázou, kde môže vzniknúť ten istý problém.
+
+\section*{Dopad zmeny}
+Možné zvýšenie ceny služby na základe komplexnosti tejto zmeny. Neskôr, pri správnom chode overenosti tejto služby je možné túto zmenu zaradiť ako rozšírenie tejto služby.
+
+\section*{Prerekvizity}
+Bude treba zaučiť technický tím, ktorý bude schopný vyriešiť túto zmenu.
 \end{document}
